@@ -22,7 +22,7 @@
   color: #ffffff;
 }
 .header__item__link:active {
-  background-color: none;
+  background-color: unset;
   color: #ce4307;
 }
 .header__item-burger {
@@ -45,7 +45,7 @@
   fill: #ffffff;
 }
 .header__svg:active {
-  background-color: none;
+  background-color: unset;
   fill: #ce4307;
 }
 .header__btn {
@@ -76,6 +76,7 @@
   background-image: url("../img/hero-back.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: 50% 50%;
 }
 .hero__descr {
   margin: 0;
@@ -206,6 +207,7 @@
   max-height: 569px;
   background-image: url("../img/photoCamera.jpg");
   background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 .about__form {
   display: flex;
@@ -300,6 +302,10 @@
   color: #202020;
   font-family: "Roboto";
   line-height: 22px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   transition: all 0.3s ease-in-out;
 }
 .event__descr:hover {
@@ -311,7 +317,7 @@
   outline: none;
 }
 .event__descr:active {
-  background-color: none;
+  background-color: unset;
   color: #ce4307;
   outline: none;
 }
@@ -389,6 +395,7 @@
   height: 20px;
   padding-left: 18px;
   font-size: 12px;
+  font-family: "Roboto";
   background-size: 14px 14px;
   background-image: url("../img/calendar.svg");
   background-repeat: no-repeat;
@@ -434,6 +441,8 @@
 .contacts__left {
   position: relative;
   background-image: url("../img/map.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .contacts__location {
   position: absolute;
@@ -565,6 +574,10 @@
 .callback__input-big {
   padding-bottom: 116px;
 }
+.callback__textarea {
+  height: 151px;
+  resize: none;
+}
 .callback__btn {
   padding: 17.5px 23px 14.5px 22px;
   align-self: flex-start;
@@ -596,7 +609,8 @@
 }
 .footer__text {
   margin: 0;
-  width: 361px;
+  padding: 0 10px;
+  width: 383px;
   font-family: "Roboto";
   font-size: 16px;
   font-weight: 400;
@@ -609,7 +623,7 @@
   height: 30.7px;
 }
 .footer__link {
-  margin-right: 203px;
+  margin-right: 192px;
   padding-top: 2px;
   display: flex;
   flex-direction: column;

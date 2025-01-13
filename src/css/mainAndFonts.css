@@ -1,3 +1,5 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); */
+
 @font-face {
     font-family: 'TTFirsNeue';
     src: local('TTFirsNeue-Regular'),
@@ -40,7 +42,7 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: local('TRoboto-Light'),
+    src: local('Roboto-Light'),
         url("../fonts/Roboto-Light.woff2") format(woff2),
         url("../fonts/Roboto-Light.woff") format(woff);
     font-weight: 300;
@@ -82,7 +84,7 @@ img {
 body {
     margin: 0;
     padding: 0;
-    font-family: "TTFirsNeue", sans-serif;
+    font-family: 'TTFirsNeue', sans-serif;
     background-color: #ffffff;
 }
 
